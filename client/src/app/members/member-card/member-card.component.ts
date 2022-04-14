@@ -6,7 +6,7 @@ import { MembersService } from 'src/app/_services/members.service';
 @Component({
   selector: 'app-member-card',
   templateUrl: './member-card.component.html',
-  styleUrls: ['./member-card.component.css']
+  styleUrls: ['./member-card.component.css'],
 })
 export class MemberCardComponent implements OnInit {
   @Input() member: Member;
@@ -18,7 +18,7 @@ export class MemberCardComponent implements OnInit {
 
   addLike(member: Member) {
     this.memberService.addLike(member.username).subscribe(() => {
-     this.toastr.success ('You have liked'+ member.knownAs);
+      this.toastr.success('You have liked ' + member.knownAs);
     })
   }
 

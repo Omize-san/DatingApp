@@ -23,6 +23,8 @@ import { JwtInterceptor } from './_interceptors/jwt.interceptor';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { TestInputComponent } from './_forms/test-input/test-input.component';
+import { MemberMessageComponent } from './members/member-message/member-message.component';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { TestInputComponent } from './_forms/test-input/test-input.component';
     MemberEditComponent,
     PhotoEditorComponent,
     TestInputComponent,
+    MemberMessageComponent,
+    MemberMessagesComponent,
   ],
   imports: [
     BrowserModule,
